@@ -1,0 +1,960 @@
+::1 - - [07/May/2026 02:23:03] "GET / HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [07/May/2026 02:23:16] "GET /index.html HTTP/1.1" 200 -
+::ffff:127.0.0.1 - - [07/May/2026 02:23:29] code 404, message File not found
+::ffff:127.0.0.1 - - [07/May/2026 02:23:29] "GET /style.css HTTP/1.1" 404 -
+::1 - - [07/May/2026 02:23:56] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:56] "GET /scraped/69a6e1356dca2075b2fbba4d.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:56] "GET /styles.css?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:56] "GET /assets/lulabite-logo.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:56] "GET /scraped/69a6e592feee5208062ad51b.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /scraped/69a6e16973a20246b1c7154c.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /checkout-routes.js?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /script.js?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /assets/icon-account.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /scraped/69a6e595618c8d450d7ecfd2.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /scraped/69a89d5fbffadf08fa85a618.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /assets/icon-cart.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /assets/lulabite-product.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /scraped/69a6e59f618c8d109a7ee0a0.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /scraped/69a993a08ca91a614b2056d9.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /scraped/69a6e137feee5259462a31e7.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /assets/icon-star.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /assets/icon-moon.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /assets/icon-shield.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:57] "GET /scraped/69a6e5a22782eca520d7a0f1.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(2).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(2).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 61203, 0, 0)
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:23:58] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 57965, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:23:59] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /styles.css?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /scraped/69a6e592feee5208062ad51b.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /scraped/69a6e1356dca2075b2fbba4d.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /assets/lulabite-logo.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /scraped/69a6e16973a20246b1c7154c.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /assets/icon-account.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /assets/icon-cart.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /scraped/69a6e595618c8d450d7ecfd2.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /scraped/69a89d5fbffadf08fa85a618.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /assets/lulabite-product.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /scraped/69a6e59f618c8d109a7ee0a0.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /scraped/69a993a08ca91a614b2056d9.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /scraped/69a6e137feee5259462a31e7.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /assets/icon-star.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /assets/icon-shield.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /assets/icon-moon.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /scraped/69a6e5a22782eca520d7a0f1.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /checkout-routes.js?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:26] "GET /script.js?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(2).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(2).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 50827, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:24:27] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 61375, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:24:27] code 404, message File not found
+::1 - - [07/May/2026 02:24:27] "GET /favicon.ico HTTP/1.1" 404 -
+::1 - - [07/May/2026 02:26:43] "GET /assets/icon-social.svg HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:26:50] "GET /about.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:26:50] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+Exception occurred during processing of request from ('::1', 53909, 0, 0)
+----------------------------------------
+Exception occurred during processing of request from ('::1', 63539, 0, 0)
+----------------------------------------
+Exception occurred during processing of request from ('::1', 61420, 0, 0)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+----------------------------------------
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+----------------------------------------
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 49436, 0, 0)
+Traceback (most recent call last):
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:26:52] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 55507, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:27:00] "GET /shipping-policy.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:07] "GET /index.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:07] "GET /about.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:07] "GET /faq.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:07] "GET /checkout.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:07] "GET /thankyou.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:07] "GET /shipping-policy.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:07] "GET /refund-return-policy.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:07] "GET /privacy-policy.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:07] "GET /terms-of-service.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:46] "GET /index.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:46] "GET /about.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:46] "GET /faq.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:46] "GET /checkout.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:46] "GET /thankyou.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:46] "GET /shipping-policy.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:46] "GET /refund-return-policy.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:46] "GET /privacy-policy.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:40:46] "GET /terms-of-service.html HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:12] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:12] "GET /assets/logo.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:12] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:12] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:12] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:12] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:12] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:12] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:12] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:42:32] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 60033, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:43:03] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:43:03] "GET /assets/logo.webp HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:43:04] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:43:04] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:43:04] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:43:04] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:43:24] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:43:48] "GET / HTTP/1.1" 304 -
+::1 - - [07/May/2026 02:43:48] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:43:48] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 60069, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+::1 - - [07/May/2026 02:43:48] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 65302, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+::1 - - [07/May/2026 02:44:08] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:44:23] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:44:23] "GET /styles.css?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:46:36] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:50:57] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:50:57] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:53:46] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:53:46] "GET /assets/logo.webp HTTP/1.1" 304 -
+::1 - - [07/May/2026 02:53:48] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:53:48] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 62796, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 57725, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+::1 - - [07/May/2026 02:53:48] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+::1 - - [07/May/2026 02:53:48] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 56728, 0, 0)
+::1 - - [07/May/2026 02:53:48] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 49559, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+::1 - - [07/May/2026 02:53:48] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 63914, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 59810, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:53:56] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:55:36] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 62041, 0, 0)
+::1 - - [07/May/2026 02:55:36] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 60938, 0, 0)
+::1 - - [07/May/2026 02:55:36] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 60159, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+::1 - - [07/May/2026 02:55:37] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 51933, 0, 0)
+Traceback (most recent call last):
+::1 - - [07/May/2026 02:55:37] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 58493, 0, 0)
+::1 - - [07/May/2026 02:55:37] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 54037, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+::1 - - [07/May/2026 02:55:50] "GET / HTTP/1.1" 304 -
+::1 - - [07/May/2026 02:55:51] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:55:51] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:55:51] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:55:51] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 50959, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+::1 - - [07/May/2026 02:55:51] "GET /assets/Lulla%20(2).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 50340, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+::1 - - [07/May/2026 02:55:51] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:55:51] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 51325, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+::1 - - [07/May/2026 02:55:51] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+::1 - - [07/May/2026 02:55:51] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 58468, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('::1', 55529, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:55:56] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:55:56] "GET /styles.css?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:55:57] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:55:57] "GET /styles.css?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:56:05] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:56:05] "GET /assets/Lulla%20(2).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:56:05] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:56:05] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:56:05] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:56:06] "GET /assets/Lulla%20(4).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:56:06] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+::1 - - [07/May/2026 02:56:06] "GET /assets/Lulla%20(5).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 62512, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+::1 - - [07/May/2026 02:56:06] "GET /assets/Lulla%20(3).mp4 HTTP/1.1" 200 -
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 02:56:06] "GET /assets/Lulla%20(1).mp4 HTTP/1.1" 200 -
+----------------------------------------
+Exception occurred during processing of request from ('::1', 53751, 0, 0)
+Traceback (most recent call last):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1310, in finish_request
+    self.RequestHandlerClass(request, client_address, self,
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 671, in __init__
+    super().__init__(*args, **kwargs)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 436, in handle
+    self.handle_one_request()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 424, in handle_one_request
+    method()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 678, in do_GET
+    self.copyfile(f, self.wfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 877, in copyfile
+    shutil.copyfileobj(source, outputfile)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\shutil.py", line 200, in copyfileobj
+    fdst_write(buf)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+----------------------------------------
+::1 - - [07/May/2026 03:05:55] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:15:38] "HEAD /assets/new%20products/buy1.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:15:38] "HEAD /assets/new%20products/buy1take1.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:15:38] "HEAD /assets/new%20products/buy2%20get2.png HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:33:49] "HEAD /assets/ingredients/Griffonia_simplicifolia_seeds_te%E2%80%A6_202605070329.jpeg HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:33:49] "HEAD /assets/ingredients/L-theanine_liquid_textures_ripples_202605070330.jpeg HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:33:49] "HEAD /assets/ingredients/Magnesium_mineral_crystals_powde%E2%80%A6_202605070330.jpeg HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:33:49] "HEAD /assets/ingredients/Passionflower_petals_and_leaves_202605070330.jpeg HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:33:49] "HEAD /assets/ingredients/Strawberry_gummies_with_strawber%E2%80%A6_202605070330.jpeg HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:33:49] "HEAD /assets/ingredients/Valerian_root_fibers_and_textures_202605070331.jpeg HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:33:49] "HEAD /assets/ingredients/White_silk_texture_flowing_curves_202605070330.jpeg HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:50:10] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:50:10] "GET /styles.css?v=20260502-1 HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:53:23] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:53:31] "GET / HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:53:40] "GET /styles.css HTTP/1.1" 200 -
+::1 - - [07/May/2026 03:55:49] "GET /styles.css HTTP/1.1" 200 -

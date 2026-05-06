@@ -329,7 +329,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     if (autoRefillTitle) {
-      autoRefillTitle.textContent = useSubscription ? 'Save 30% with Automatic Refills' : 'One-Time Purchase';
+      autoRefillTitle.textContent = useSubscription ? 'Save 20% with Monthly Delivery' : 'One-Time Purchase';
     }
 
     if (autoRefillSub) {
