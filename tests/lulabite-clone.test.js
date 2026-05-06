@@ -44,7 +44,19 @@ const htmlPages = lulabiteHtmlPages.map((file) => [file, read(file)]);
   assert(index.includes(`id="${id}"`), `Landing page must preserve #${id}.`);
 });
 
-assert.equal((index.match(/class="gallery-slide/g) || []).length, 12, 'Jiyu gallery slide count must stay intact.');
+assert.equal((index.match(/class="gallery-slide/g) || []).length, 11, 'Landing gallery must keep one clean mobile slide set without duplicated buy1take1 media.');
+assert(index.includes('<span>11</span>\n          </div>\n          <div class="gallery-thumb-row">'), 'Landing gallery counter must match the 11 mobile gallery slides.');
+assert(index.includes('class="gallery-slide is-active" data-index="0" data-gallery-role="mobile-default"'), 'Landing gallery mobile/tablet default must be the first active mobile slide.');
+assert(index.includes('class="gallery-thumb active" data-index="0" data-gallery-role="mobile-default"'), 'Landing gallery mobile/tablet default thumbnail must be active by default.');
+{
+  const galleryMarker = index.indexOf('id="product-gallery"');
+  const galleryStart = index.lastIndexOf('<section', galleryMarker);
+  const galleryEnd = index.indexOf('</section>', galleryMarker) + '</section>'.length;
+  const gallery = index.slice(galleryStart, galleryEnd);
+  const mobileShellStart = gallery.indexOf('<div class="gallery-mobile-shell">');
+  const mobileShell = gallery.slice(mobileShellStart);
+  assert.equal((mobileShell.match(/assets\/new%20products\/buy1take1\.png/g) || []).length, 2, 'Mobile gallery should include buy1take1 only once as a slide and once as its thumbnail.');
+}
 assert.equal((index.match(/data-faq/g) || []).length, 13, 'Jiyu FAQ item count must stay intact.');
 assert.equal((index.match(/data-accordion/g) || []).length, 4, 'Jiyu product accordion count must stay intact.');
 assert.equal((index.match(/class="result-slide/g) || []).length, 4, 'Jiyu result carousel count must stay intact.');
@@ -163,7 +175,14 @@ assert(styles.includes('.product-reviews-line .review-count {\n  color: var(--br
 assert(styles.includes('.site-logo {\n  background: var(--brand-blue);'), 'Header logo link must use the main LullaBites brand color.');
 assert(styles.includes('.footer-brand {\n  background: var(--brand-night);'), 'Footer logo link must provide a dark brand background.');
 assert(styles.includes('.jar-option__card {\n  background: #e6f0ff;'), 'Product selector cards must use a branded blue background.');
-assert(!/green|#2f6b4f|#4f8f68|#dfeee5|#173f2c|#3d7052|#0f7a46|#eff5dd|#dff0cf/i.test(styles), 'Styles must not contain Jiyu green tokens or green hex colors.');
+assert(
+  !/green|#2f6b4f|#4f8f68|#dfeee5|#173f2c|#3d7052|#0f7a46|#eff5dd|#dff0cf|#dff0bf|#d9f0b9|#e6f4d4|#0b6d38|#17412b|rgba\(20,\s*52,\s*34|rgba\(24,\s*52,\s*34|rgba\(14,\s*45,\s*28/i.test(styles),
+  'Styles must not contain Jiyu green tokens, green hex colors, or green rgba colors.'
+);
+assert(styles.includes('.mobile-nav__brand {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--brand-blue);'), 'Mobile nav logo must sit on a LullaBites brand-blue background.');
+assert(!styles.includes('background: #e6f4d4;'), 'Auto-refill selected state must not use the old green mobile background.');
+assert(styles.includes('.auto-refill {\n  padding: 13px 16px;\n  margin-bottom: 14px;\n  background: #e6f0ff;'), 'Auto-refill base card must use branded blue background.');
+assert(styles.includes('  .auto-refill {\n    padding: 14px 16px;\n    margin-bottom: 16px;\n    background: #e6f0ff;'), 'Mobile auto-refill card must use branded blue background.');
 
 assert(!/<span class="video-thumb"[^>]*>\s*<img/i.test(index), 'Video thumbs must render videos instead of static images.');
 assert.equal((index.match(/<video[^>]*\bautoplay\b/g) || []).length, 0, 'Video sections must follow Jiyu and not autoplay.');
