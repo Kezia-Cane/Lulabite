@@ -6256,6 +6256,21 @@ select {
   color: rgba(15, 63, 191, 0.72);
 }
 
+#how-different .comparison-row .comp-label-col,
+#how-different .comparison-row .comp-lullabites-col,
+#how-different .comparison-row .comp-lullabites-col .comp-copy {
+  color: var(--brand-blue);
+}
+
+#how-different .comparison-row .comp-other-col,
+#how-different .comparison-row .comp-other-col .comp-copy {
+  color: rgba(15, 63, 191, 0.72);
+}
+
+#how-different .comp-mark-icon--check {
+  color: var(--brand-blue);
+}
+
 @media (max-width: 1024px) {
   .how-different {
     padding: 44px 16px 34px;
