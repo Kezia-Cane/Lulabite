@@ -83,8 +83,8 @@ assert(styles.includes('--brand-blue: #0f3fbf;'), 'Styles must include scraped b
 assert(styles.includes('--brand-navy: #0b1220;'), 'Styles must include scraped navy brand token.');
 assert(styles.includes('"Inter"'), 'Styles must use scraped/system Inter-style font stack.');
 
-assert(routes.includes("buy1: '#'"), 'Checkout route map must use placeholder links.');
-assert(script.includes("buy1: '#'"), 'Inline checkout route map must use placeholder links.');
+assert(routes.includes("buy1: 'https://bettermornings.silmea.com/lullabbitesbuy1'"), 'Checkout route map must use the final Buy 1 checkout link.');
+assert(!/var checkoutUrls\s*=\s*\{/.test(script), 'Script must use the shared checkout route map instead of inline checkout URLs.');
 assert(script.includes("buy1Get1: 'buy1Get1'"), 'Bundle alias logic must remain intact.');
 
 htmlPages.forEach(([file, page]) => {

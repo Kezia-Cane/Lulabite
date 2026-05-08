@@ -1,14 +1,14 @@
 (function (globalScope) {
   var CHECKOUT_URLS = {
     oneTime: {
-      buy1: '#',
-      buy1Get1: '#',
-      buy2Get2: '#'
+      buy1: 'https://bettermornings.silmea.com/lullabbitesbuy1',
+      buy1Get1: 'https://bettermornings.silmea.com/lullabbitesbuy1getfree',
+      buy2Get2: 'https://bettermornings.silmea.com/lullabitesbuy2get2free'
     },
     subscription: {
-      buy1: '#',
-      buy1Get1: '#',
-      buy2Get2: '#'
+      buy1: 'https://bettermornings.silmea.com/lullabitesbuy1save30monthlydelivery',
+      buy1Get1: 'https://bettermornings.silmea.com/lullabitesbuy1get1freesave30monthlydelivery',
+      buy2Get2: 'https://bettermornings.silmea.com/lullabitesbuy2get2freesave30monthlydelivery'
     }
   };
   CHECKOUT_URLS.one_time = CHECKOUT_URLS.oneTime;

@@ -19,18 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   var addToCartBtn = document.getElementById('add-to-cart');
   var checkoutCtas = Array.from(document.querySelectorAll('[data-checkout-cta]'));
-  var checkoutUrls = {
-    oneTime: {
-      buy1: '#',
-      buy1Get1: '#',
-      buy2Get2: '#'
-    },
-    subscription: {
-      buy1: '#',
-      buy1Get1: '#',
-      buy2Get2: '#'
-    }
-  };
+  var checkoutRoutes = window.LulabitesCheckoutRoutes || {};
 
   var accordionItems = document.querySelectorAll('[data-accordion]');
   var faqItems = document.querySelectorAll('[data-faq]');
@@ -104,7 +93,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var purchaseType = getPurchaseType();
     var bundleKey = getSelectedBundleKey();
 
-    return checkoutUrls[purchaseType][bundleKey];
+    if (typeof checkoutRoutes.resolveCheckoutUrl === 'function') {
+      return checkoutRoutes.resolveCheckoutUrl(purchaseType, bundleKey);
+    }
+
+    return '#';
   }
 
   function syncCheckoutCtas() {
