@@ -17,13 +17,22 @@ const rewriteDestinations = new Map(config.rewrites.map((rewrite) => [rewrite.so
   ['/faq', '/faq.html'],
   ['/checkout', '/checkout.html'],
   ['/thankyou', '/thankyou.html'],
-  ['/shipping', '/shipping-policy.html'],
-  ['/refund', '/refund-return-policy.html'],
-  ['/privacy', '/privacy-policy.html'],
-  ['/terms', '/terms-of-service.html'],
+  ['/shipping-policy', '/shipping-policy.html'],
+  ['/refund-return-policy', '/refund-return-policy.html'],
+  ['/privacy-policy', '/privacy-policy.html'],
+  ['/terms-of-service', '/terms-of-service.html'],
   ['/contact', '/contact.html']
 ].forEach(([source, destination]) => {
   assert.equal(rewriteDestinations.get(source), destination, `${source} must rewrite to ${destination}.`);
+});
+
+[
+  ['/shipping', '/shipping-policy.html'],
+  ['/refund', '/refund-return-policy.html'],
+  ['/privacy', '/privacy-policy.html'],
+  ['/terms', '/terms-of-service.html']
+].forEach(([source, destination]) => {
+  assert.equal(rewriteDestinations.get(source), destination, `${source} must remain as a backwards-compatible alias.`);
 });
 
 const publishedHtmlFiles = fs.readdirSync(root)
@@ -38,6 +47,11 @@ const localAbsoluteHrefPattern = /\bhref=(["'])\/([^"']*)\1/g;
 publishedHtmlFiles.forEach((file) => {
   const page = fs.readFileSync(path.join(root, file), 'utf8');
   const hrefs = [...page.matchAll(localAbsoluteHrefPattern)].map((match) => '/' + match[2]);
+
+  assert(
+    !/\bhref=(["'])\/(?:shipping|refund|privacy|terms)\1/.test(page),
+    `${file} must link directly to canonical policy slugs instead of short aliases.`
+  );
 
   hrefs.forEach((href) => {
     const pathname = href.split(/[?#]/)[0];
