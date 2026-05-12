@@ -13322,3 +13322,45 @@ body.mobile-nav-open {
   border-color: var(--lullabites-form-blue) !important;
   box-shadow: 0 0 0 4px rgba(227, 229, 244, 0.9), 0 14px 28px rgba(18, 19, 66, 0.1) !important;
 }
+
+/* Final tablet/mobile announcement lock: keep everything on one line */
+@media (max-width: 1024px) {
+  body > .announcement-bar {
+    padding: 4px 8px !important;
+  }
+
+  body > .announcement-bar > .announcement-bar__inner {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+    gap: 4px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+  }
+
+  body > .announcement-bar .announcement-text {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    gap: 4px !important;
+    font-size: 9px !important;
+    line-height: 1 !important;
+    letter-spacing: 0 !important;
+  }
+
+  body > .announcement-bar .announcement-offer,
+  body > .announcement-bar .announcement-offer--shipping,
+  body > .announcement-bar .announcement-text a {
+    display: inline !important;
+    white-space: nowrap !important;
+    font-size: 9px !important;
+    line-height: 1 !important;
+  }
+
+  body > .announcement-bar .announcement-break {
+    display: none !important;
+  }
+}
