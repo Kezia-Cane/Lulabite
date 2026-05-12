@@ -1,0 +1,94 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/faq",
+      "destination": "/faq.html"
+    },
+    {
+      "source": "/checkout",
+      "destination": "/checkout.html"
+    },
+    {
+      "source": "/thankyou",
+      "destination": "/thankyou.html"
+    },
+    {
+      "source": "/thank-you",
+      "destination": "/thankyou.html"
+    },
+    {
+      "source": "/order-confirmation",
+      "destination": "/thankyou.html"
+    },
+    {
+      "source": "/order-confirmation-page-729924-3569",
+      "destination": "/thankyou.html"
+    },
+    {
+      "source": "/shipping",
+      "destination": "/shipping-policy.html"
+    },
+    {
+      "source": "/shipping-policy",
+      "destination": "/shipping-policy.html"
+    },
+    {
+      "source": "/shipping-policy-618246-2998",
+      "destination": "/shipping-policy.html"
+    },
+    {
+      "source": "/refund",
+      "destination": "/refund-return-policy.html"
+    },
+    {
+      "source": "/refund-policy",
+      "destination": "/refund-return-policy.html"
+    },
+    {
+      "source": "/refund-return-policy",
+      "destination": "/refund-return-policy.html"
+    },
+    {
+      "source": "/refund-policy-9532",
+      "destination": "/refund-return-policy.html"
+    },
+    {
+      "source": "/privacy",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/privacy-policy",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/privacy-policy-918566",
+      "destination": "/privacy-policy.html"
+    },
+    {
+      "source": "/terms",
+      "destination": "/terms-of-service.html"
+    },
+    {
+      "source": "/terms-of-service",
+      "destination": "/terms-of-service.html"
+    },
+    {
+      "source": "/terms-of-service-670851",
+      "destination": "/terms-of-service.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/contact.html"
+    },
+    {
+      "source": "/contactus-9977",
+      "destination": "/contact.html"
+    }
+  ]
+}
