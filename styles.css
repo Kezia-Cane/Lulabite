@@ -9926,6 +9926,160 @@ video {
   font-weight: 700;
 }
 
+.contact-care-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1060px;
+  margin: 0 auto 28px;
+}
+
+.contact-care-pill {
+  padding: 18px 20px 20px;
+  border: 1px solid rgba(15, 63, 191, 0.18);
+  border-radius: 18px;
+  background: linear-gradient(180deg, rgba(253, 250, 240, 0.96) 0%, rgba(239, 244, 255, 0.98) 100%);
+  box-shadow: 0 16px 36px rgba(15, 63, 191, 0.08);
+}
+
+.contact-care-pill__label {
+  display: block;
+  margin-bottom: 8px;
+  color: rgba(15, 63, 191, 0.66);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.contact-care-pill strong {
+  display: block;
+  color: var(--blue-dark);
+  font-size: 17px;
+  line-height: 1.45;
+  font-weight: 600;
+}
+
+.contact-form-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
+  gap: 24px;
+  max-width: 1060px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.contact-form-aside {
+  padding: 30px 26px;
+  border: 1px solid rgba(15, 63, 191, 0.14);
+  border-radius: 22px;
+  background: linear-gradient(180deg, #eef4ff 0%, #dfeaf7 100%);
+  box-shadow: 0 18px 42px rgba(15, 63, 191, 0.08);
+}
+
+.contact-form-aside__eyebrow,
+.contact-form-card__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 14px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(15, 63, 191, 0.08);
+  color: var(--blue-dark);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.contact-form-aside__title {
+  margin: 0 0 14px;
+  color: var(--blue-dark);
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 3.2vw, 44px);
+  line-height: 1.08;
+  font-weight: 400;
+}
+
+.contact-form-aside__text {
+  margin: 0 0 22px;
+  color: rgba(15, 63, 191, 0.82);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.contact-form-aside__points {
+  display: grid;
+  gap: 14px;
+}
+
+.contact-form-aside__point {
+  padding: 14px 14px 16px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(15, 63, 191, 0.1);
+}
+
+.contact-form-aside__point-title {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--blue-dark);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.contact-form-aside__point-copy {
+  display: block;
+  color: rgba(15, 63, 191, 0.78);
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.contact-form-card {
+  padding: 28px;
+  border: 1px solid rgba(15, 63, 191, 0.14);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(253, 250, 240, 0.98) 0%, rgba(250, 252, 255, 1) 100%);
+  box-shadow: 0 24px 56px rgba(15, 63, 191, 0.08);
+}
+
+.contact-form-card__header {
+  max-width: 720px;
+  margin-bottom: 18px;
+}
+
+.contact-form-card__title {
+  margin: 0 0 10px;
+  color: var(--blue-dark);
+  font-family: var(--font-serif);
+  font-size: clamp(34px, 3vw, 42px);
+  line-height: 1.08;
+  font-weight: 400;
+}
+
+.contact-form-card__text {
+  margin: 0;
+  color: rgba(15, 63, 191, 0.8);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.contact-form-card__frame {
+  height: 1040px;
+  padding: 18px;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top left, rgba(189, 213, 255, 0.54) 0%, rgba(189, 213, 255, 0) 32%),
+    linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
+  border: 1px solid rgba(15, 63, 191, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.74);
+  overflow: hidden;
+}
+
+.contact-form-card__frame iframe {
+  display: block;
+}
+
 /* ========================================
    FAQ Hub
    ======================================== */
@@ -10909,6 +11063,33 @@ video {
   .legal-block__text p,
   .legal-block__text li {
     font-size: 16px;
+  }
+
+  .contact-care-strip {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .contact-form-layout {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .contact-form-aside,
+  .contact-form-card {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .contact-form-aside__title,
+  .contact-form-card__title {
+    font-size: 30px;
+  }
+
+  .contact-form-card__frame {
+    height: 1220px;
+    padding: 12px;
   }
 
   .legal-block {
