@@ -8,6 +8,102 @@
   <meta name="description"
     content="LullaBites natural sleep gummies help you fall asleep faster, stay asleep longer, and wake refreshed without melatonin grogginess.">
   <link rel="stylesheet" href="styles.css?v=20260502-1">
+  <style>
+    :root {
+      --brand-ice: #e5e8ff;
+      --brand-surface: #d7ddff;
+      --brand-cream: #d7ddff;
+      --brand-mint: #c8d0ff;
+      --blue-light: #c8d0ff;
+      --blue-pale: #e5e8ff;
+      --cream: #d7ddff;
+      --cream-dark: #c8d0ff;
+      --gray-light: #b4bcdf;
+    }
+
+    .stars svg g {
+      color: #232560;
+    }
+
+    .benefit-icons {
+      gap: 12px;
+      margin-top: 16px;
+    }
+
+    .benefit-icon-item {
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #eef1ff 0%, #dfe5ff 100%);
+      border: 1px solid #c1c9f2;
+    }
+
+    .benefit-icon-item::before {
+      content: "\2713";
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: #eef1ff;
+      border: 1px solid #9ba7de;
+      color: #232560;
+      font-size: 13px;
+      font-weight: 900;
+      flex: 0 0 22px;
+    }
+
+    .benefit-icon-label {
+      color: #090b24;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+    }
+
+    .benefit-list li {
+      margin-bottom: 10px;
+      padding: 10px 12px 10px 38px;
+      border-radius: 10px;
+      background: #e8ecff;
+      border: 1px solid #c8d0ff;
+    }
+
+    .benefit-list li::before {
+      left: 14px;
+      color: #232560;
+      font-weight: 900;
+    }
+
+    .benefit-strip {
+      background: #dfe4ff;
+      border-top: 1px solid #c8d0ff;
+      border-bottom: 1px solid #c8d0ff;
+    }
+
+    .benefit-strip__item {
+      background: #eef1ff;
+      border: 1px solid #c8d0ff;
+      border-radius: 999px;
+      padding: 8px 14px;
+    }
+
+    .benefit-strip__text {
+      color: #121342;
+      font-weight: 700;
+    }
+
+    .add-to-cart-btn {
+      background: linear-gradient(180deg, #2a2f73 0%, #121342 100%) !important;
+      color: #eef1ff !important;
+      border: 1px solid #5861b0 !important;
+      box-shadow: 0 8px 18px rgba(18, 19, 66, 0.28);
+    }
+
+    .add-to-cart-btn:hover {
+      background: linear-gradient(180deg, #343b8f 0%, #1a1f5b 100%) !important;
+    }
+  </style>
   <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
   <link rel="preconnect" href="https://assets.cdn.filesafe.space" crossorigin>
 </head>
@@ -240,38 +336,35 @@
                   <use href="#rating-star" x="12.5" y="0"></use>
                   <use href="#rating-star" x="25" y="0"></use>
                   <use href="#rating-star" x="37.5" y="0"></use>
-                  <use href="#rating-star" x="50" y="0" color="#ffe6a8"></use>
+                  <use href="#rating-star" x="50" y="0" color="#c8d0ff"></use>
                   <g clip-path="url(#rating-half-fill)">
                     <use href="#rating-star" x="50" y="0"></use>
                   </g>
                 </g>
               </svg>
             </span>
-            <span class="review-count">4.8 | 82,000+ Happy Customers</span>
+          <span class="review-count">4.8 | 82,000+ Rested Customers</span>
           </div>
           <h1 class="product-title">LullaBites Natural Sleep Gummies</h1>
-          <p class="product-description"><strong>Melatonin-free sleep gummies for better nights and better
-              mornings.</strong> LullaBites help you fall asleep faster, stay asleep longer, calm your mind, and wake
-            refreshed without the heavy morning haze.</p>
+          <p class="product-description"><strong>Premium melatonin-free sleep support for deep nights and clear
+              mornings.</strong> LullaBites helps you switch off faster, stay deeply settled through the night, and
+            wake focused and restored without the next-day fog.</p>
         </div>
 
         <ul class="benefit-icons">
           <li class="benefit-icon-item">
-            <img src="assets/new%20products/buy1.png" alt="60 Gummies Per Bottle" width="50" height="50">
-            <span class="benefit-icon-label">60 Gummies Per Bottle</span>
+            <span class="benefit-icon-label">Fall asleep within 30 minutes without melatonin.</span>
           </li>
           <li class="benefit-icon-item">
-            <img src="assets/icon-star.svg" alt="Melatonin-Free Nightly Support" width="50" height="50">
-            <span class="benefit-icon-label">Melatonin-Free Nightly Support</span>
+            <span class="benefit-icon-label">Wake up clear-headed, restored, and ready for morning.</span>
           </li>
           <li class="benefit-icon-item">
-            <img src="assets/icon-moon.svg" alt="Wake Refreshed, Not Groggy" width="50" height="50">
-            <span class="benefit-icon-label">Wake Refreshed, Not Groggy</span>
+            <span class="benefit-icon-label">100% melatonin-free formula that works with your nightly rhythm.</span>
           </li>
         </ul>
 
         <div class="urgency-line">
-          <span class="urgency-text">&#128293; Low Stock - Selling Fast</span>
+          <span class="urgency-text">&#128293; Tonight&rsquo;s premium sleep bundle is moving fast</span>
         </div>
 
         <div class="jar-options-section">
@@ -359,10 +452,10 @@
             </button>
             <div class="accordion-body">
               <ul class="benefit-list">
-                <li><strong>Fall asleep faster</strong> - supports an easier bedtime wind-down</li>
-                <li><strong>Stay asleep longer</strong> - helps you settle into deeper rest</li>
-                <li><strong>Wake refreshed</strong> - no heavy, groggy morning feeling</li>
-                <li><strong>Calm your mind</strong> - gentle support for stressful evenings</li>
+                <li><strong>Fall asleep on cue</strong> - helps shorten the gap between lights out and deep rest.</li>
+                <li><strong>Sleep through the night</strong> - supports steadier recovery with fewer overnight wakeups.</li>
+                <li><strong>Wake mentally clear</strong> - crafted for refreshed mornings without heavy carryover.</li>
+                <li><strong>Calm nighttime overthinking</strong> - eases a wired mind into a premium wind-down state.</li>
               </ul>
             </div>
           </div>
@@ -414,31 +507,31 @@
 
         <div class="video-thumbs-row">
           <button class="video-thumb" type="button" aria-label="Play customer review video 1">
-            <video preload="metadata" playsinline loop>
+            <video muted preload="metadata" playsinline loop>
               <source src="assets/Lulla%20(1).mp4" type="video/mp4">
             </video>
             <span class="play-icon"></span>
           </button>
           <button class="video-thumb" type="button" aria-label="Play customer review video 2">
-            <video preload="metadata" playsinline loop>
+            <video muted preload="metadata" playsinline loop>
               <source src="assets/Lulla%20(2).mp4" type="video/mp4">
             </video>
             <span class="play-icon"></span>
           </button>
           <button class="video-thumb" type="button" aria-label="Play customer review video 3">
-            <video preload="metadata" playsinline loop>
+            <video muted preload="metadata" playsinline loop>
               <source src="assets/Lulla%20(3).mp4" type="video/mp4">
             </video>
             <span class="play-icon"></span>
           </button>
           <button class="video-thumb" type="button" aria-label="Play customer review video 4">
-            <video preload="metadata" playsinline loop>
+            <video muted preload="metadata" playsinline loop>
               <source src="assets/Lulla%20(4).mp4" type="video/mp4">
             </video>
             <span class="play-icon"></span>
           </button>
           <button class="video-thumb" type="button" aria-label="Play customer review video 5">
-            <video preload="metadata" playsinline loop>
+            <video muted preload="metadata" playsinline loop>
               <source src="assets/Lulla%20(5).mp4" type="video/mp4">
             </video>
             <span class="play-icon"></span>
@@ -1143,7 +1236,7 @@
       <div class="social-collage">
         <button class="social-tile social-tile--large social-tile--left media-play-tile" type="button"
           aria-label="Play LullaBites social testimonial video">
-          <video preload="metadata" playsinline loop>
+          <video muted preload="metadata" playsinline loop>
             <source src="assets/Lulla%20(1).mp4" type="video/mp4">
           </video>
           <span class="play-icon" aria-hidden="true"></span>
@@ -1166,28 +1259,28 @@
         <div class="social-collage__center">
           <button class="social-tile social-tile--small media-play-tile" type="button"
             aria-label="Play LullaBites social review video 1">
-            <video preload="metadata" playsinline loop>
+            <video muted preload="metadata" playsinline loop>
               <source src="assets/Lulla%20(2).mp4" type="video/mp4">
             </video>
             <span class="play-icon" aria-hidden="true"></span>
           </button>
           <button class="social-tile social-tile--small media-play-tile" type="button"
             aria-label="Play LullaBites social review video 2">
-            <video preload="metadata" playsinline loop>
+            <video muted preload="metadata" playsinline loop>
               <source src="assets/Lulla%20(3).mp4" type="video/mp4">
             </video>
             <span class="play-icon" aria-hidden="true"></span>
           </button>
           <button class="social-tile social-tile--small media-play-tile" type="button"
             aria-label="Play LullaBites social review video 3">
-            <video preload="metadata" playsinline loop>
+            <video muted preload="metadata" playsinline loop>
               <source src="assets/Lulla%20(4).mp4" type="video/mp4">
             </video>
             <span class="play-icon" aria-hidden="true"></span>
           </button>
           <button class="social-tile social-tile--small media-play-tile" type="button"
             aria-label="Play LullaBites social review video 4">
-            <video preload="metadata" playsinline loop>
+            <video muted preload="metadata" playsinline loop>
               <source src="assets/Lulla%20(5).mp4" type="video/mp4">
             </video>
             <span class="play-icon" aria-hidden="true"></span>
@@ -1196,7 +1289,7 @@
 
         <button class="social-tile social-tile--large social-tile--right media-play-tile" type="button"
           aria-label="Play LullaBites social review video 5">
-          <video preload="metadata" playsinline loop>
+          <video muted preload="metadata" playsinline loop>
             <source src="assets/7492585341254257963.mp4" type="video/mp4">
           </video>
           <span class="play-icon" aria-hidden="true"></span>

@@ -651,23 +651,21 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
+      video.muted = true;
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      video.removeAttribute('autoplay');
+      video.pause();
+
       thumb.addEventListener('click', function () {
         var isPlaying = !video.paused;
-
-        cards.forEach(function (otherThumb) {
-          var otherVideo = otherThumb.querySelector('video');
-          if (otherVideo && otherVideo !== video) {
-            otherVideo.pause();
-            otherThumb.classList.remove('is-playing');
-          }
-        });
 
         if (isPlaying) {
           video.pause();
           thumb.classList.remove('is-playing');
         } else {
-          video.removeAttribute('muted');
-          video.muted = false;
+          video.muted = true;
+          video.setAttribute('muted', '');
           video.play().catch(function () {
             return null;
           });

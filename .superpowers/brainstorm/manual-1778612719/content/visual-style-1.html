@@ -1,0 +1,418 @@
+<style>
+  .intro {
+    max-width: 980px;
+    margin-bottom: 1.5rem;
+  }
+  .cards {
+    align-items: start;
+  }
+  .card {
+    background: #11152a;
+    border: 1px solid rgba(255,255,255,0.12);
+    color: #f7f7fb;
+  }
+  .card-body p {
+    color: rgba(240, 242, 255, 0.78);
+  }
+  .direction-preview {
+    aspect-ratio: 16 / 11;
+    padding: 1rem;
+    display: grid;
+    gap: 0.85rem;
+  }
+  .direction-preview--a {
+    background:
+      radial-gradient(circle at top, rgba(160, 132, 255, 0.24), transparent 38%),
+      linear-gradient(180deg, #0f1734 0%, #111a3f 52%, #0b1027 100%);
+  }
+  .direction-preview--b {
+    background:
+      radial-gradient(circle at top, rgba(163, 118, 255, 0.36), transparent 34%),
+      linear-gradient(180deg, #0b1028 0%, #12193f 48%, #090d21 100%);
+  }
+  .direction-preview--c {
+    background:
+      radial-gradient(circle at top, rgba(203, 183, 255, 0.42), transparent 36%),
+      linear-gradient(180deg, #15183a 0%, #1d1d48 48%, #0d1027 100%);
+  }
+  .mock-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0.8rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .mock-chip {
+    padding: 0.28rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 600;
+  }
+  .direction-preview--a .mock-chip {
+    background: rgba(173, 148, 255, 0.16);
+    border: 1px solid rgba(173, 148, 255, 0.3);
+    color: #ded5ff;
+  }
+  .direction-preview--b .mock-chip {
+    background: rgba(184, 151, 255, 0.18);
+    border: 1px solid rgba(184, 151, 255, 0.34);
+    color: #f0e7ff;
+  }
+  .direction-preview--c .mock-chip {
+    background: rgba(213, 194, 255, 0.18);
+    border: 1px solid rgba(213, 194, 255, 0.34);
+    color: #f3ecff;
+  }
+  .hero-block {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 0.85rem;
+    min-height: 170px;
+  }
+  .hero-copy,
+  .hero-card,
+  .bullet-box,
+  .selector-box,
+  .footer-box {
+    border-radius: 22px;
+    border: 1px solid rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+  }
+  .hero-copy {
+    padding: 1rem;
+    background: rgba(8, 12, 30, 0.64);
+    display: grid;
+    gap: 0.55rem;
+  }
+  .eyebrow {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #d7cffd;
+  }
+  .headline {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .subline {
+    font-size: 0.82rem;
+    line-height: 1.45;
+    color: rgba(241, 242, 255, 0.76);
+  }
+  .bullet-box {
+    display: grid;
+    gap: 0.4rem;
+    padding: 0.7rem 0.8rem;
+    background: rgba(255,255,255,0.04);
+  }
+  .bullet {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.72rem;
+    color: #f3f4ff;
+  }
+  .bullet-dot {
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 999px;
+    flex: none;
+    background: linear-gradient(180deg, #d7c4ff 0%, #7a6cff 100%);
+    box-shadow: 0 0 0 4px rgba(177, 159, 255, 0.12);
+  }
+  .hero-card {
+    padding: 1rem;
+    background: linear-gradient(180deg, rgba(255,255,255,0.11), rgba(255,255,255,0.03));
+    display: grid;
+    align-content: space-between;
+    gap: 0.8rem;
+  }
+  .product-glow {
+    height: 92px;
+    border-radius: 20px;
+    background:
+      radial-gradient(circle at 50% 32%, rgba(255,255,255,0.55), transparent 30%),
+      radial-gradient(circle at 50% 70%, rgba(171, 144, 255, 0.32), transparent 48%),
+      linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+  .cta-row {
+    display: flex;
+    gap: 0.55rem;
+    align-items: center;
+  }
+  .cta-main,
+  .cta-ghost {
+    padding: 0.62rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .cta-main {
+    background: linear-gradient(180deg, #c9b5ff 0%, #8b7bff 100%);
+    color: #17152f;
+  }
+  .cta-ghost {
+    border: 1px solid rgba(255,255,255,0.18);
+    color: #f7f7fb;
+    background: rgba(255,255,255,0.04);
+  }
+  .selector-box,
+  .footer-box {
+    background: rgba(9, 12, 31, 0.76);
+    padding: 0.85rem;
+  }
+  .selector-title,
+  .footer-title {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #d5cff9;
+    margin-bottom: 0.65rem;
+  }
+  .selector-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  .selector-item {
+    border-radius: 16px;
+    padding: 0.65rem 0.45rem;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.04);
+    text-align: center;
+    font-size: 0.68rem;
+    color: rgba(245,247,255,0.78);
+  }
+  .selector-item.is-selected {
+    background: linear-gradient(180deg, rgba(130, 113, 255, 0.32), rgba(84, 71, 188, 0.26));
+    border-color: rgba(204, 194, 255, 0.56);
+    box-shadow: 0 0 0 1px rgba(225, 218, 255, 0.22) inset;
+    color: #fff;
+  }
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+  }
+  .footer-links {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .footer-link {
+    padding: 0.35rem 0.58rem;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.66rem;
+    color: rgba(244,245,255,0.82);
+  }
+  .socials {
+    display: flex;
+    gap: 0.45rem;
+  }
+  .social-dot {
+    width: 1.9rem;
+    height: 1.9rem;
+    border-radius: 999px;
+    background: rgba(212, 196, 255, 0.16);
+    border: 1px solid rgba(212, 196, 255, 0.24);
+  }
+  .recommend {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.85rem;
+    padding: 0.4rem 0.7rem;
+    border-radius: 999px;
+    background: rgba(142, 123, 255, 0.16);
+    border: 1px solid rgba(182, 168, 255, 0.26);
+    color: #e8e2ff;
+    font-size: 0.72rem;
+    font-weight: 600;
+  }
+</style>
+
+<h2>Choose The Branding Intensity</h2>
+<p class="subtitle">Same LullaBites layout, same product selector, same funnel structure. This is only the visual direction for the global refinement pass.</p>
+
+<div class="intro">
+  <div class="recommend">Recommended: B keeps the premium nighttime feel closest to the Flary reference without over-stylizing the current pages.</div>
+</div>
+
+<div class="cards">
+  <div class="card" data-choice="a" onclick="toggleSelect(this)">
+    <div class="card-image direction-preview direction-preview--a">
+      <div class="mock-header">
+        <span>LullaBites</span>
+        <span class="mock-chip">Soft Navy</span>
+      </div>
+      <div class="hero-block">
+        <div class="hero-copy">
+          <div class="eyebrow">Melatonin-Free Sleep Support</div>
+          <div class="headline">Calmer, cleaner nighttime branding</div>
+          <div class="subline">A more restrained version of the new direction with softer contrast and gentler lavender accents.</div>
+          <div class="bullet-box">
+            <div class="bullet"><span class="bullet-dot"></span><span>Fall asleep faster without melatonin</span></div>
+            <div class="bullet"><span class="bullet-dot"></span><span>Supports a steady wind-down routine</span></div>
+            <div class="bullet"><span class="bullet-dot"></span><span>Wake up clear-headed the next morning</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="product-glow"></div>
+          <div class="cta-row">
+            <div class="cta-main">Shop Now</div>
+            <div class="cta-ghost">Learn More</div>
+          </div>
+        </div>
+      </div>
+      <div class="selector-box">
+        <div class="selector-title">Bundle Selector</div>
+        <div class="selector-grid">
+          <div class="selector-item">1 Jar</div>
+          <div class="selector-item is-selected">2 Jars</div>
+          <div class="selector-item">4 Jars</div>
+        </div>
+      </div>
+      <div class="footer-box">
+        <div>
+          <div class="footer-title">Footer / FAQ / Policy Pages</div>
+          <div class="footer-links">
+            <div class="footer-link">FAQ</div>
+            <div class="footer-link">Shipping</div>
+            <div class="footer-link">Returns</div>
+          </div>
+        </div>
+        <div class="socials">
+          <div class="social-dot"></div>
+          <div class="social-dot"></div>
+          <div class="social-dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A. Soft Navy</h3>
+      <p>Closest to the current site, but cleaned up and more premium. Lower risk, slightly less dramatic.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="b" onclick="toggleSelect(this)">
+    <div class="card-image direction-preview direction-preview--b">
+      <div class="mock-header">
+        <span>LullaBites</span>
+        <span class="mock-chip">Deep Sleep Premium</span>
+      </div>
+      <div class="hero-block">
+        <div class="hero-copy">
+          <div class="eyebrow">Nighttime Calm, Clear Mornings</div>
+          <div class="headline">Richer contrast with stronger conversion focus</div>
+          <div class="subline">Deeper navy foundations, premium purple highlights, cleaner product framing, and bolder call-to-action emphasis.</div>
+          <div class="bullet-box">
+            <div class="bullet"><span class="bullet-dot"></span><span>Fall asleep faster without melatonin</span></div>
+            <div class="bullet"><span class="bullet-dot"></span><span>Powered by 5-HTP, L-Theanine and Magnesium</span></div>
+            <div class="bullet"><span class="bullet-dot"></span><span>Wake up refreshed, not weighed down</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="product-glow"></div>
+          <div class="cta-row">
+            <div class="cta-main">Get Better Sleep</div>
+            <div class="cta-ghost">See Benefits</div>
+          </div>
+        </div>
+      </div>
+      <div class="selector-box">
+        <div class="selector-title">Bundle Selector</div>
+        <div class="selector-grid">
+          <div class="selector-item">1 Jar</div>
+          <div class="selector-item is-selected">2 Jars</div>
+          <div class="selector-item">4 Jars</div>
+        </div>
+      </div>
+      <div class="footer-box">
+        <div>
+          <div class="footer-title">Footer / FAQ / Policy Pages</div>
+          <div class="footer-links">
+            <div class="footer-link">FAQ</div>
+            <div class="footer-link">Shipping</div>
+            <div class="footer-link">Privacy</div>
+          </div>
+        </div>
+        <div class="socials">
+          <div class="social-dot"></div>
+          <div class="social-dot"></div>
+          <div class="social-dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B. Deep Sleep Premium</h3>
+      <p>Best match for the requested Flary-inspired direction: darker, stronger, cleaner, and more conversion-led.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="c" onclick="toggleSelect(this)">
+    <div class="card-image direction-preview direction-preview--c">
+      <div class="mock-header">
+        <span>LullaBites</span>
+        <span class="mock-chip">Lavender Glow</span>
+      </div>
+      <div class="hero-block">
+        <div class="hero-copy">
+          <div class="eyebrow">Sleep Gummies For The Night Shift</div>
+          <div class="headline">Brighter lavender accents and a softer luxury feel</div>
+          <div class="subline">Still premium and nighttime-focused, but more visibly styled with lighter glow moments and slightly softer surfaces.</div>
+          <div class="bullet-box">
+            <div class="bullet"><span class="bullet-dot"></span><span>Quiet a racing mind before bed</span></div>
+            <div class="bullet"><span class="bullet-dot"></span><span>Gentle nightly support for deeper rest</span></div>
+            <div class="bullet"><span class="bullet-dot"></span><span>Built for a calm, repeatable bedtime ritual</span></div>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="product-glow"></div>
+          <div class="cta-row">
+            <div class="cta-main">Start Tonight</div>
+            <div class="cta-ghost">Why It Works</div>
+          </div>
+        </div>
+      </div>
+      <div class="selector-box">
+        <div class="selector-title">Bundle Selector</div>
+        <div class="selector-grid">
+          <div class="selector-item">1 Jar</div>
+          <div class="selector-item is-selected">2 Jars</div>
+          <div class="selector-item">4 Jars</div>
+        </div>
+      </div>
+      <div class="footer-box">
+        <div>
+          <div class="footer-title">Footer / FAQ / Policy Pages</div>
+          <div class="footer-links">
+            <div class="footer-link">About</div>
+            <div class="footer-link">Returns</div>
+            <div class="footer-link">Terms</div>
+          </div>
+        </div>
+        <div class="socials">
+          <div class="social-dot"></div>
+          <div class="social-dot"></div>
+          <div class="social-dot"></div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C. Lavender Glow</h3>
+      <p>Most stylized and luminous. Premium, but a bit less grounded than the reference direction.</p>
+    </div>
+  </div>
+</div>
