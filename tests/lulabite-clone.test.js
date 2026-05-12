@@ -79,8 +79,9 @@ assert(!index.includes('my.felinebloom.com'), 'Landing page must use placeholder
   assert(!/my\.felinebloom\.com|tonerpads/i.test(page), `${file} must not contain old checkout URLs.`);
 });
 
-assert(styles.includes('--brand-blue: #0f3fbf;'), 'Styles must include scraped blue brand token.');
-assert(styles.includes('--brand-navy: #0b1220;'), 'Styles must include scraped navy brand token.');
+assert(styles.includes('--brand-blue: #121342;'), 'Styles must include the requested indigo brand token.');
+assert(styles.includes('--brand-navy: #090b24;'), 'Styles must include the updated deep-night indigo token.');
+assert(styles.includes('--brand-blue-bright: #232560;'), 'Styles must keep secondary accents in the same indigo family.');
 assert(styles.includes('"Inter"'), 'Styles must use scraped/system Inter-style font stack.');
 
 assert(routes.includes("buy1: 'https://bettermornings.silmea.com/lullabbitesbuy1'"), 'Checkout route map must use the final Buy 1 checkout link.');
@@ -162,11 +163,11 @@ htmlPages
   assert(page.includes('class="comp-hero-img"'), `${file} comparison table must keep the hero image.`);
   assert(page.includes('class="comp-product-img comp-product-img--other"'), `${file} comparison table must keep the other-product image.`);
   assert(
-    page.includes('src="assets/reviews/Screenshot_2025-12-26_at_1.35.21_AM.jpg" alt="LullaBites review result" class="comp-hero-img"'),
+    /src="assets\/reviews\/lullabites-result-bedside-after\.png"[\s\S]*alt="LullaBites review result"[\s\S]*class="comp-hero-img"/.test(page),
     `${file} comparison hero image must use the selected review image.`
   );
   assert(
-    page.includes('src="assets/new%20products/ChatGPT%20Image%20May%207,%202026,%2004_29_35%20AM.png" alt="Other sleep aids" class="comp-product-img comp-product-img--other"'),
+    /src="assets\/new%20products\/ChatGPT%20Image%20May%207,%202026,%2004_29_35%20AM\.png"[\s\S]*alt="Other sleep aids"[\s\S]*class="comp-product-img comp-product-img--other"/.test(page),
     `${file} other sleep aids image must use the selected new product image.`
   );
 });
@@ -174,15 +175,15 @@ htmlPages
 assert(styles.includes('.product-reviews-line .review-count {\n  color: var(--brand-blue);'), 'Review count must use LullaBites brand blue.');
 assert(styles.includes('.site-logo {\n  background: var(--brand-blue);'), 'Header logo link must use the main LullaBites brand color.');
 assert(styles.includes('.footer-brand {\n  background: var(--brand-night);'), 'Footer logo link must provide a dark brand background.');
-assert(styles.includes('.jar-option__card {\n  background: #e6f0ff;'), 'Product selector cards must use a branded blue background.');
+assert(styles.includes('.jar-option__card {\n  background: #ececf6;'), 'Product selector cards must use the updated soft indigo background.');
 assert(
   !/green|#2f6b4f|#4f8f68|#dfeee5|#173f2c|#3d7052|#0f7a46|#eff5dd|#dff0cf|#dff0bf|#d9f0b9|#e6f4d4|#0b6d38|#17412b|rgba\(20,\s*52,\s*34|rgba\(24,\s*52,\s*34|rgba\(14,\s*45,\s*28/i.test(styles),
   'Styles must not contain Jiyu green tokens, green hex colors, or green rgba colors.'
 );
 assert(styles.includes('.mobile-nav__brand {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  background: var(--brand-blue);'), 'Mobile nav logo must sit on a LullaBites brand-blue background.');
 assert(!styles.includes('background: #e6f4d4;'), 'Auto-refill selected state must not use the old green mobile background.');
-assert(styles.includes('.auto-refill {\n  padding: 13px 16px;\n  margin-bottom: 14px;\n  background: #e6f0ff;'), 'Auto-refill base card must use branded blue background.');
-assert(styles.includes('  .auto-refill {\n    padding: 14px 16px;\n    margin-bottom: 16px;\n    background: #e6f0ff;'), 'Mobile auto-refill card must use branded blue background.');
+assert(styles.includes('.auto-refill {\n  padding: 13px 16px;\n  margin-bottom: 14px;\n  background: #ececf6;'), 'Auto-refill base card must use the updated soft indigo background.');
+assert(styles.includes('  .auto-refill {\n    padding: 14px 16px;\n    margin-bottom: 16px;\n    background: #ececf6;'), 'Mobile auto-refill card must use the updated soft indigo background.');
 
 assert(!/<span class="video-thumb"[^>]*>\s*<img/i.test(index), 'Video thumbs must render videos instead of static images.');
 assert.equal((index.match(/<video[^>]*\bautoplay\b/g) || []).length, 0, 'Video sections must follow Jiyu and not autoplay.');
