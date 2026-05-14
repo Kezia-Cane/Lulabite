@@ -13369,37 +13369,37 @@ body.mobile-nav-open {
 /* Mobile polish for bottom social collage video layout */
 @media (max-width: 768px) {
   #social-section .social-inner {
-    padding-left: 14px !important;
-    padding-right: 14px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
   #social-section .social-collage {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 12px !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 14px !important;
     align-items: stretch !important;
-  }
-
-  #social-section .social-tile--left,
-  #social-section .social-tile--right {
-    width: 100% !important;
-    min-height: 0 !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding: 4px calc(50vw - 39vw) 10px !important;
+    margin: 0 -16px !important;
   }
 
   #social-section .social-collage__center {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 12px !important;
-    width: 100% !important;
+    display: contents !important;
   }
 
   #social-section .social-tile,
   #social-section .social-tile--small,
   #social-section .social-tile--large {
-    width: 100% !important;
+    flex: 0 0 78vw !important;
+    width: 78vw !important;
+    max-width: 360px !important;
     aspect-ratio: 9 / 16 !important;
     border-radius: 18px !important;
     overflow: hidden !important;
+    scroll-snap-align: center !important;
   }
 
   #social-section .social-tile video,
@@ -13408,5 +13408,32 @@ body.mobile-nav-open {
     height: 100% !important;
     object-fit: cover !important;
     display: block !important;
+  }
+
+  #social-section .social-collage::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  #social-section .social-comment-card {
+    display: none !important;
+  }
+
+  #social-section .social-handle-pill {
+    margin: 14px auto 0 !important;
+  }
+}
+
+@media (max-width: 420px) {
+  #social-section .social-collage {
+    gap: 12px !important;
+    padding-left: calc(50vw - 40vw) !important;
+    padding-right: calc(50vw - 40vw) !important;
+  }
+
+  #social-section .social-tile,
+  #social-section .social-tile--small,
+  #social-section .social-tile--large {
+    flex-basis: 80vw !important;
+    width: 80vw !important;
   }
 }
