@@ -13368,9 +13368,14 @@ body.mobile-nav-open {
 
 /* Mobile polish for bottom social collage video layout */
 @media (max-width: 768px) {
+  #social-section {
+    overflow: visible !important;
+  }
+
   #social-section .social-inner {
     padding-left: 16px !important;
     padding-right: 16px !important;
+    overflow: visible !important;
   }
 
   #social-section .social-collage {
@@ -13382,6 +13387,7 @@ body.mobile-nav-open {
     overflow-y: hidden !important;
     scroll-snap-type: x mandatory !important;
     -webkit-overflow-scrolling: touch !important;
+    touch-action: pan-x !important;
     padding: 4px calc(50vw - 39vw) 10px !important;
     margin: 0 -16px !important;
   }
