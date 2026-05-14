@@ -691,8 +691,9 @@ document.addEventListener('DOMContentLoaded', function () {
           video.pause();
           thumb.classList.remove('is-playing');
         } else {
-          video.muted = true;
-          video.setAttribute('muted', '');
+          video.muted = false;
+          video.removeAttribute('muted');
+          video.volume = 1;
           video.play().catch(function () {
             return null;
           });
