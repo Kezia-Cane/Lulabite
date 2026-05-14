@@ -13365,3 +13365,48 @@ body.mobile-nav-open {
     display: none !important;
   }
 }
+
+/* Mobile polish for bottom social collage video layout */
+@media (max-width: 768px) {
+  #social-section .social-inner {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  #social-section .social-collage {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    align-items: stretch !important;
+  }
+
+  #social-section .social-tile--left,
+  #social-section .social-tile--right {
+    width: 100% !important;
+    min-height: 0 !important;
+  }
+
+  #social-section .social-collage__center {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  #social-section .social-tile,
+  #social-section .social-tile--small,
+  #social-section .social-tile--large {
+    width: 100% !important;
+    aspect-ratio: 9 / 16 !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+  }
+
+  #social-section .social-tile video,
+  #social-section .social-tile img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+}

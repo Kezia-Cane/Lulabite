@@ -20,6 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
   var addToCartBtn = document.getElementById('add-to-cart');
   var checkoutCtas = Array.from(document.querySelectorAll('[data-checkout-cta]'));
   var checkoutRoutes = window.LulabitesCheckoutRoutes || {};
+  var trackingApi = window.LulabitesAbTracking;
+  var tracker = trackingApi && typeof trackingApi.createAbTracker === 'function'
+    ? trackingApi.createAbTracker({
+      endpoint: 'https://funnel-ab-dashboard.vercel.app/api/ab-track',
+      testKey: 'lulabites_headline_v1'
+    })
+    : null;
 
   var accordionItems = document.querySelectorAll('[data-accordion]');
   var faqItems = document.querySelectorAll('[data-faq]');
@@ -113,6 +120,20 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (cta.tagName && cta.tagName.toLowerCase() === 'a') {
         cta.href = checkoutUrl;
+      }
+    });
+  }
+
+  function trackCheckoutClick(checkoutUrl, purchaseType, bundleKey) {
+    if (!tracker) {
+      return;
+    }
+
+    tracker.track('cta_click', {
+      metadata: {
+        checkout_url: checkoutUrl,
+        purchase_type: purchaseType,
+        bundle: bundleKey
       }
     });
   }
@@ -362,6 +383,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   renderJarPricing();
 
+  if (tracker) {
+    tracker.track('page_view');
+  }
+
   if (headerMenu && mobileNav) {
     headerMenu.addEventListener('click', function () {
       if (mobileNav.hidden) {
@@ -430,7 +455,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
       event.preventDefault();
       syncCheckoutCtas();
-      window.location.href = getCheckoutUrl();
+      var checkoutUrl = getCheckoutUrl();
+      trackCheckoutClick(checkoutUrl, getPurchaseType(), getSelectedBundleKey());
+      window.location.href = checkoutUrl;
     });
   }
 
@@ -683,6 +710,79 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function setVideoPosterFromFirstFrame(video) {
+    if (!video || video.getAttribute('poster')) {
+      return;
+    }
+
+    var posterCaptured = false;
+    var canvas = document.createElement('canvas');
+    var context = canvas.getContext('2d');
+
+    if (!context) {
+      return;
+    }
+
+    function capturePosterFrame() {
+      if (posterCaptured || !video.videoWidth || !video.videoHeight) {
+        return;
+      }
+
+      posterCaptured = true;
+      canvas.width = video.videoWidth;
+      canvas.height = video.videoHeight;
+
+      try {
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        video.setAttribute('poster', canvas.toDataURL('image/jpeg', 0.82));
+      } catch (error) {
+        // Ignore poster generation failures and fall back to native behavior.
+      }
+    }
+
+    function tryCaptureAtStartFrame() {
+      if (!video.videoWidth || !video.videoHeight) {
+        return;
+      }
+
+      if (video.readyState >= 2) {
+        if (video.duration && isFinite(video.duration) && video.duration > 0.08) {
+          var onSeeked = function () {
+            video.removeEventListener('seeked', onSeeked);
+            capturePosterFrame();
+            video.currentTime = 0;
+          };
+
+          video.addEventListener('seeked', onSeeked, { once: true });
+
+          try {
+            video.currentTime = 0.08;
+          } catch (error) {
+            capturePosterFrame();
+          }
+        } else {
+          capturePosterFrame();
+        }
+      }
+    }
+
+    if (video.readyState >= 1) {
+      tryCaptureAtStartFrame();
+    } else {
+      video.addEventListener('loadedmetadata', tryCaptureAtStartFrame, { once: true });
+    }
+
+    video.addEventListener('loadeddata', capturePosterFrame, { once: true });
+  }
+
+  function initVideoPosters() {
+    var pageVideos = Array.from(document.querySelectorAll('.video-thumb video, .media-play-tile video'));
+    pageVideos.forEach(function (video) {
+      setVideoPosterFromFirstFrame(video);
+    });
+  }
+
+  initVideoPosters();
   initVideoCards(videoThumbs);
 
   if (ingredientsRow) {
