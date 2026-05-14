@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
   var benefitStrip = document.getElementById('benefit-strip');
 
   var videoThumbs = Array.from(document.querySelectorAll('.video-thumb, .media-play-tile'));
+  var activeVideo = null;
   var ingredientsRow = document.getElementById('ingredients-row');
   var ingredientsPrev = document.getElementById('ingredients-prev');
   var ingredientsNext = document.getElementById('ingredients-next');
@@ -690,22 +691,37 @@ document.addEventListener('DOMContentLoaded', function () {
         if (isPlaying) {
           video.pause();
           thumb.classList.remove('is-playing');
+          if (activeVideo === video) {
+            activeVideo = null;
+          }
         } else {
+          if (activeVideo && activeVideo !== video) {
+            activeVideo.pause();
+          }
+
           video.muted = false;
           video.removeAttribute('muted');
           video.volume = 1;
           video.play().catch(function () {
             return null;
           });
+          activeVideo = video;
           thumb.classList.add('is-playing');
         }
       });
 
       video.addEventListener('pause', function () {
         thumb.classList.remove('is-playing');
+        if (activeVideo === video) {
+          activeVideo = null;
+        }
       });
 
       video.addEventListener('play', function () {
+        if (activeVideo && activeVideo !== video) {
+          activeVideo.pause();
+        }
+        activeVideo = video;
         thumb.classList.add('is-playing');
       });
     });
