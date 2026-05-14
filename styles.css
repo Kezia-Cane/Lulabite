@@ -13406,6 +13406,7 @@ body.mobile-nav-open {
     border-radius: 18px !important;
     overflow: hidden !important;
     scroll-snap-align: center !important;
+    touch-action: pan-x !important;
   }
 
   #social-section .social-tile video,
@@ -13414,6 +13415,10 @@ body.mobile-nav-open {
     height: 100% !important;
     object-fit: cover !important;
     display: block !important;
+  }
+
+  #social-section .social-tile video {
+    pointer-events: none !important;
   }
 
   #social-section .social-collage::-webkit-scrollbar {
